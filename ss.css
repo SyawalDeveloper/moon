@@ -1,0 +1,88 @@
+html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #000000, #343434);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      background: linear-gradient(to right, #ff0000, #0011ff, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 3s infinite linear;
+    }
+
+    p.fw-light{
+      background: linear-gradient(to right, #ff0000, #0011ff, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 3s infinite linear;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-top: 15px;
+      color: #ffffff;
+    }
+
+    .input-group {
+      max-width: 100%;
+    }
+
+    .form-control {
+      border-radius: 12px !important;
+      border: 2px solid #ffffff;
+      background-color: transparent;
+      color: white;
+    }
+
+    .form-control::placeholder {
+      color: #ccc;
+      font-style: italic;
+    }
+
+    .form-control:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 10px #ffffff;
+    }
+
+    .btn-custom {
+      background: #000000;
+      color: rgb(255, 255, 255);
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background: #646464;
+      color: white;
+    }
+
+    @keyframes rainbow {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      animation: confetti-fall 3s linear infinite;
+      border-radius: 50%;
+      z-index: 999;
+    }
+
+    @keyframes confetti-fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+      }
+    }
